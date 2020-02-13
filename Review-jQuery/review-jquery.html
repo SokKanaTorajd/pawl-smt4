@@ -1,0 +1,89 @@
+<!-- file: review-jquery.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Review jQuery</title>
+        <script src="jquery/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#deskripsi").hide();
+                $("#spesifikasi").hide();
+                $("#review").hide();
+                $("#desc").click(function(){
+                    $("#deskripsi").slideToggle("slow");
+                });
+                $("#spec").click(function(){
+                    $("#spesifikasi").fadeToggle("slow");
+                });
+                $("#rev").click(function(){
+                    $("#review").fadeToggle("slow");
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            var gbrslideshow = new Array(); 
+            gbrslideshow[0] = new Image(); 
+            gbrslideshow[0].src = "images/asus.jpg"; 
+            gbrslideshow[1] = new Image();
+            gbrslideshow[1].src = "images/asus_2.jpg";
+            gbrslideshow[2] = new Image();
+            gbrslideshow[2].src = "images/asus_3.jpg";
+            gbrslideshow[3] = new Image();
+            gbrslideshow[3].src = "images/asus_4.jpg";
+            gbrslideshow[4] = new Image();
+            gbrslideshow[4].src = "images/asus_5.jpg";
+        </script>
+        <style type="text/css">
+            h2 {
+                text-align: center;
+            }
+            #gambar {
+                height: 300px;
+                width: 400px;
+                margin: 0 auto;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>ASUS VivoBook E12 E203MAH</h2>
+        <img src="" id="gambar"/><br>
+        <script type="text/javascript">
+            var urut = 0;
+            var jeda = 2000;
+            var jumlahimage = gbrslideshow.length - 1;   
+            function SlideShowImage() {
+                if (!document.images) return;
+                document.getElementById('gambar').src = gbrslideshow[urut].src
+                if (urut < jumlahimage)
+                    urut++;
+                else
+                    urut=0;
+                // pergantian image setiap jead
+                setTimeout("SlideShowImage()", jeda);
+            }
+            SlideShowImage();
+        </script>
+        <button id="desc">Deskripsi</button>
+        <button id="spec">Spesifikasi</button>
+        <button id="rev">Review</button>
+        <p id="deskripsi">
+            <strong>Deskripsi:</strong> <br>
+            ASUS tidak pernah absen dalam peta persaingan laptop entry-level. Melalui varian ASUS VivoBook E12 E203MAH, pabrikan asal Taiwan tersebut berhasil memanjakan konsumen dengan sajian perangkat ringan, ringkas, namun tetap bisa diandalkan. Sebagai salah satu notebook terbaik 2019 di bawah Rp 2 jutaan, kinerja laptop ini juga bisa dibilang cukup kompetitif dikelasnya. Karena selain sudah ada balutan prosesor Intel Celeron N4000 generasi Gemini Lake adapula fitur TurboBoost hingga 2,6GHz. Tak hanya itu, ASUS juga memberikan RAM 4GB jenis DDR4 dengan kecepatan 2133 MHz. Sayangnya, RAM tersebut on board atau ditanam di motherboard sehingga pengguna tidak dapat melakukan upgrade. 
+        </p>
+        <p id="spesifikasi">
+            <strong>Spesifikasi: </strong><br>
+            Prosesor: Celeron Dual Core N4000 1.1 GHz<br>
+            RAM: 2GB, 4GB<br>
+            Kapasitas Penyimpanan: HDD 500 GB<br>
+            Konektifitas: HDMI, USB3.0, Bluetooth, Card Reader, Camera, Speakers, Microphone, USB Type-C, USB3.1<br>
+            Baterai: 3 Cells 42 Whrs Polymer Battery Battery life hingga 10 jam<br>
+            Dimensi: 28.6 x 19.3 x 2.14 cm (WxDxH)<br>
+        </p>
+        <p id="review">
+            <strong>Review: </strong><br>
+            <strong>Prepita Prepeti Poo:</strong> specs masih kurang. sebagai seorang pengguna yang cukup concern dengan specs, menurut saya ini gak seberapa walaupun secara desain terlihat dipikirkan banget. tapi dia pun masih pake celeron n4000 dimana itu merupakan salah satu processor yang biasa aja. tapiiii, gak bisa disalahin juga karena itu memang untuk laptop low budget. jujur saya gak pernah pakai ini karena memang beli untuk anak, tapi pengen ngereview aja soalnya saya emang pemerhati wkwkwkwk tapi kalo buat dia belajar sehari-hari dan ngerjain tugas sih ini seharusnya cukup mendukung.<br>
+            <strong>Sayiddina Munaroh:</strong>  membuat saya hardwork saya sangat menikmati untuk bekerja dengan asus ini, salah satunya karena nyaman untuk dipakai bekerja. mengetik di laptop ini merupakan experience tersendiri, karena fitur keyboard dibuat nyaman dan memang mempermudah pengguna. selain itu, menurut saya touchpadnya juga cukup luas, sehingga kalau harus scrolling nggak sempit dan ngacir gitu. sensitivitynya juga menurut saya cukup oke, didukung denan kemampuan finger gliding yang sangat fluid membuat kegiatan bekerja saya terasa menyenangkan. oleh karen itu, mulai sekrang saya akan memutuskan untuk menjadi hard worker<br>
+        </p>
+    </body>
+</html>
