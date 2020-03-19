@@ -5,8 +5,23 @@
     </head>
     <body>
         <h2>Data PC di Laboratorium Lembaga XYZ</h2>
-        <p>{{nama}}</p>
+        <!-- <p>{{nama}}</p>
         <p>{{spec}}</p>
-        <p>{{jmlh}}</p>
+        <p>{{jmlh}}</p> -->
+        <!-- <ul>
+            {% for lab in data_lab.keys() %}
+                <li>{{data_lab[lab]}}</li>
+                {% for data in data_lab.values() %}
+                    <li>{{data_lab[data]}}</li>
+                {%endfor%}
+            {%endfor%}
+        </ul> -->
+        <table>
+            <tr>
+                {% for name in data_lab.keys() %}
+                    <td>{{name}}</td>
+                {% endfor %}
+            </tr>
+        </table>
     </body>
 </html>

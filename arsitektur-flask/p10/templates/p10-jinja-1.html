@@ -1,0 +1,45 @@
+<!-- file: p10-jinja-1.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoh Template Jinja2 - Bagian 1</title>
+    </head>
+    <body>
+        <h2>Contoh Template dengan Jinja2</h2>
+        <strong>Nilai Variable dalam Templates</strong>
+        <p>
+            str_var = {{ str_var }} <br>
+            int_var = {{ int_var }} <br>
+            float_var = {{ float_var }} <br>
+            list_var = {{ list_var }} <br>
+            dict_var = {{ dict_var }} <br>
+            Luas Lingkaran = {{ model.hitungLuas() }} <br>
+            Keliling Lingkaran = {{ model.hitungKeliling() }} <br>
+        </p>
+
+        <h2>Contoh Penggunaan Operator Jinja2</h2>
+        a = {{ a }} <br>
+        b = {{ b }} <br>
+        a + b = {{ a+b }} <br>
+        c = {{ c }} <br>
+        {% if a == c %}
+            <p>nilai a = c</p>
+        {% endif %}
+
+        {% if a==20 and b==30 %}
+            <p>Anda Benar</p>
+        {% endif %}
+
+        <h2>Contoh Penggunaan Percabangan pada Jinja2</h2>
+        {# menampilkan nilai variable d #}
+        <p> Nilai d = {{ d }}</p>
+        {# memeriksa nilai d #}
+        {% if 0 > d %}
+            <p> d adalah bilangan negatif. </p>
+        {% elif d == 0 %}
+            <p> d adalah bilangan nol. </p>
+        {% else %}
+            <p> d adalah bilangan positif. </p>
+        {% endif %}
+    </body>
+</html>

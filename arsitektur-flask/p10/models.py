@@ -12,5 +12,6 @@ class Lingkaran:
     
     def hitungLuas(self):
         return pi * (self.radius ** 2)
+
     def hitungKeliling(self):
         return 2*pi*self.radius
