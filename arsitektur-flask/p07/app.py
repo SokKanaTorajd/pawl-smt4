@@ -1,17 +1,27 @@
 #file: app.py
 #contoh halaman web dengan Flask
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "<h2>Halo</h2><p>Selamat datang di kelas Pengembangan Aplikasi Web dengan Flask</p>"
+    # return "<h2>Halo</h2><p>Selamat datang di kelas Pengembangan Aplikasi Web dengan Flask</p>"
+    return render_template('home.html')
 
 @app.route('/profil')
 def profil():
-    return "<h2>Profil</h2><p>Aplikasi ini dibuat oleh <strong>Wijatama D</strong></p>"
+    # return "<h2>Profil</h2><p>Aplikasi ini dibuat oleh <strong>Wijatama D</strong></p>"
+    return render_template('profil.html')
+
+@app.route('/prodi')
+def prodi():
+    return render_template('prodi.html')
+
+@app.route('/kampus')
+def kampus():
+    return render_template('kampus.html')
 
 @app.route('/salam/<nama>')
 def salam(nama):
@@ -34,22 +44,6 @@ def semester(periode):
         return "<h2>Semester Genap</h2><p>Kuliah dilaksanakan pada bulan Februari-Mei. UAS dilaksanakan pada bulan Juni</p>"
     else:
         return "<h2>Pilih Semester</h2><p>Anda belum memilih semester ('ganjil' atau 'genap')</p>"
-
-# @app.route('/')
-# def home():
-#     return render_template('home.html')
-
-# @app.route('/profil')
-# def about():
-#     return render_template('profil.html')
-
-# @app.route('/prodi')
-# def prodi():
-#     return render_template('prodi.html')
-
-# @app.route('/kampus')
-# def kampus():
-#     return render_template('kampus.html')
 
 
 if __name__ == "__main__":

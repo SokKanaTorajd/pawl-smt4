@@ -4,6 +4,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return "<p>url untuk aplikasi web ini adalah localhost/angkatan/[tahun angkatan] </p>"
+
 @app.route('/angkatan/<int:tahun>')
 def angkatan(tahun):
     if tahun == 2016:
