@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+        <title> Template Penggunaan Jinja2 </title>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" type="text/css">
+        <script src="{{url_for('static', filename='main.js')}}"" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <h2>Contoh Penggunaan Perulangan pada Jinja2</h2>
+        {# menampilkan setiap elemen dalam list#}
+        <ul>
+            {%for elemen in navigasi%}
+                <li>
+                    <a href="{{elemen[0]}}">{{elemen[1]}}</a>
+                </li>
+            {%endfor%}
+        </ul>
+
+        <h2> Contoh Penggunaan CSS pada Jinja</h2>
+        <h3> Pengembangan Aplikasi Web dengan Flask</h3>
+        <p> Halaman ini adalah contoh penggunaan pada Jinja2 </p>
+
+        <h2>Contoh Penggunaan JavaScript pada Jinja2</h2>
+        2 * 3 = 
+        <script language="JavaScript">
+            var result=kali(2,3);
+            document.write(result);</script>
+        <br>
+        2 ^ 3 =
+        <script language="JavaScript">
+            var result=pangkat(2,3);
+            document.write(result);</script>
+
+        <h2>Contoh penggunaan gambar pada jinja 2</h2>
+        <img src="{{ url_for('static', filename='gambar.jpg') }}">
+
+    </body>
+</html>
