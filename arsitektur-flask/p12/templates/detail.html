@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Provinsi {{ object.province_name }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.6.0/leaflet.css"/>
+        <script 
+            src="http://cdn.leafletjs.com/leaflet/v1.6.0/leaflet.js">
+        </script>
+    </head>
+    <body>
+        <nav>
+            <a href="#">
+                <img src="{{ url_for('static', filename='logo-kawal-covid19-192x192.png') }}">
+            </a>
+        </nav>
+        <header>
+            <h2>
+                Provinsi {{ object.province_name }} ibu kota terletak di {{ object.capital_city }}  yang berada di Pulau {{ object.island }}
+                memiliki populasi {{ object.population }} terindikasi positif terinfeksi sebanyak {{ object.confirmed }},
+                meninggal {{ object.deceased }} ,dan terindikasi negatif terinfeksi sebanyak {{ object.released }}.
+            </h2>
+        </header>
+        <div id="map" style="width: 100%; height: 450px;"></div>
+        <script type="text/javascript">
+            var map = L.map('map').setView([{{ object.latitude }}, {{ object.longitude }}], 6.5);
+            var osmLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: 'Data, imagery and map information provided by <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.'
+            });
+            map.addLayer(osmLayer);
+            var marker = L.marker([{{ object.latitude }}, {{ object.longitude }}]).addTo(map)
+            .bindPopup("<strong>Positif</strong>\t: {{ object.confirmed }}<br><strong>Meninggal</strong>\t: {{ object.deceased }}<br><strong>Negatif</strong>\t: {{ object.released }}");
+        </script>
+    </body>
+</html>

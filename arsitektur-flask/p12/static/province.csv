@@ -1,0 +1,39 @@
+province_id,province_name,island,iso_code,capital_city,population,population_kmsquare,confirmed,deceased,released,longitude,latitude
+1,Aceh,Sumatra,AC,Banda Aceh,4906835,86,0,0,0,96.72895,3.869994
+2,Bali,Kepulauan Nusa Tenggara,BA,Denpasar,4104900,738,1,1,0,115.12255,-8.25731
+3,Banten,Jawa,BT,Serang,11704877,1298,10,2,1,106.160889,-6.315299
+4,Bengkulu,Sumatra,BE,Bengkulu,1844800,93,0,0,0,102.315674,-3.414725
+5,Gorontalo,Sulawesi,GO,Gorontalo,1115633,93,0,0,0,123.134766,0.637194
+6,Jakarta,Jawa,JK,Jakarta,10012271,1353,208,17,13,106.853027,-6.162401
+7,Jambi,Sumatra,JA,Jambi,3344400,63,0,0,0,103.623047,-1.625758
+8,Jawa Barat,Jawa,JB,Bandung,46029668,1306,22,1,1,107.633057,-7.144499
+9,Jawa Tengah,Jawa,JT,Semarang,33522663,986,9,3,0,110.10498,-7.2099
+10,Jawa Timur,Jawa,JI,Surabaya,38610202,806,8,1,0,112.269287,-7.525873
+11,Kalimantan Barat,Kalimantan,KB,Pontianak,4716093,41,1,0,0,109.797363,0.043945
+12,Kalimantan Selatan,Kalimantan,KS,Banjarmasin,3922790,107,0,0,0,115.048828,-3.337954
+13,Kalimantan Tengah,Kalimantan,KT,Palangka Raya,2439858,16,0,0,0,113.818359,-1.889306
+14,Kalimantan Timur,Kalimantan,KI,Samarinda,3351432,17,1,0,0,116.806641,0.307616
+15,Kalimantan Utara,Kalimantan,KU,Tanjung Selor,618384,9,0,0,0,116.378174,3.261177
+16,Kepulauan Bangka Belitung,Sumatra,BB,Pangkalpinang,1343900,82,0,0,0,106.100464,-2.114388
+17,Kepulauan Riau,Sumatra,KR,Tanjungpinang,1917415,237,1,0,0,104.468994,0.999705
+18,Lampung,Sumatra,LA,Bandar Lampung,8026191,227,1,0,0,105.084229,-5.222247
+19,Maluku,Kepulauan Maluku,MA,Ambon,1657409,34,0,0,0,128.50708,-3.063725
+20,Maluku Utara,Kepulauan Maluku,MU,Sofifi,1138667,27,0,0,0,127.683105,0.736064
+21,Nusa Tenggara Barat,Kepulauan Nusa Tenggara,NB,Mataram,4773795,239,0,0,0,116.444092,-8.635334
+22,Nusa Tenggara Timur,Kepulauan Nusa Tenggara,NT,Kupang,5036897,106,0,0,0,123.804932,-9.774025
+23,Papua,Papua,PA,Jayapura,3091047,10,0,0,0,138.570557,-3.579213
+24,Papua Barat,Papua,PB,Manokwari,849809,7,0,0,0,132.659912,-1.153487
+25,Riau,Sumatra,RI,Pekanbaru,6188442,66,1,0,0,101.513672,0.626208
+26,Sulawesi Barat,Sulawesi,SR,Mamuju,1258090,75,0,0,0,119.336243,-2.361392
+27,Sulawesi Selatan,Sulawesi,SN,Makassar,8432163,183,0,0,0,120.020142,-4.554522
+28,Sulawesi Tengah,Sulawesi,ST,Palu,2831283,42,0,0,0,120.039368,-0.898096
+29,Sulawesi Tenggara,Sulawesi,SG,Kendari,2448081,67,0,0,0,121.959229,-3.697078
+30,Sulawesi Utara,Sulawesi,SA,Manado,2386604,171,1,0,0,124.725037,1.277055
+31,Sumatra Barat,Sumatra,SB,Padang,5131900,121,0,0,0,100.118408,-0.186767
+32,Sumatra Selatan,Sumatra,SS,Palembang,7941500,93,0,0,0,104.710693,-3.107606
+33,Sumatra Utara,Sumatra,SU,Medan,13766851,189,1,1,0,98.712158,3.23924
+34,Yogyakarta,Jawa,YO,Yogyakarta,3553100,1134,2,0,0,110.390625,-7.863382
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
